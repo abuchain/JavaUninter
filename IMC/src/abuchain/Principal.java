@@ -10,13 +10,15 @@ public class Principal {
 		double altura;
 		double imc;
 		
-		Scanner teclado = new Scanner(System.in);
+		System.out.println("Informe o peso e a altura :");
 		
-		peso = teclado.nextInt();
-		altura = teclado.nextDouble();
+		try (Scanner teclado = new Scanner(System.in)) {
+			peso = teclado.nextInt();
+			altura = teclado.nextDouble();
+		}
 		
 		imc = peso / (altura * altura);
 		
-		System.out.println(imc);
+		System.out.printf("O IMC e: %.2f", imc);
 	}
 }
