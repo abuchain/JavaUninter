@@ -3,10 +3,11 @@ package abuchain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cofre {
+public class Cofrinho {
 	private List<Moeda> moedas;
+	private List<String> tiposMoeda = new ArrayList<>();
 
-    public Cofre() {
+    public Cofrinho() {
         moedas = new ArrayList<>();
     }
 
@@ -28,14 +29,25 @@ public class Cofre {
 
     // Lista todas as moedas presentes no cofrinho
     public void listarMoedas() {
-        if (moedas.isEmpty()) {
+    	if (moedas.isEmpty()) {
             System.out.println("O cofrinho está vazio.");
         } else {
-            System.out.println("Moedas no cofrinho:");
+        	
+        	System.out.println(" ");
+        	System.out.println("########## Moedas no Cofre ##########");
+        	System.out.println(" ");
+        	System.out.println("Codigo  | Tipo Moeda | Valor  | Valor em Real");
+            System.out.println("--------|------------|--------|--------------");
+
             for (int i = 0; i < moedas.size(); i++) {
                 Moeda moeda = moedas.get(i);
-                System.out.println(i + ": " + moeda.getDescricao() + " - Valor: " + moeda.getValor());
+                String tipoMoeda = moeda.getDescricao();
+                double valor = moeda.getValor();
+                double valorReal = moeda.convertReal();
+                System.out.printf("%-8d| %-11s| %-7.2f| %-13.2f%n", i, tipoMoeda, valor, valorReal);
             }
+            
+            System.out.println(" ");
         }
     }
 
