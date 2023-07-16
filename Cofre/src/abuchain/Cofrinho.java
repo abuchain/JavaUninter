@@ -62,3 +62,4 @@ public class Cofrinho {
 		return _valorTotal;
 	}
 }
+

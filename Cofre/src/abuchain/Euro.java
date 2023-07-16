@@ -11,6 +11,7 @@ public class Euro extends Moeda {
 		return _valor;
 	}
 
+	// Converte o valor da moeda em euro para o valor em Real
 	public double convertReal(){
 		return _valor * 6;
 	}
