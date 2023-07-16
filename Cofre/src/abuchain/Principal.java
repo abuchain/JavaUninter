@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Principal {
 	public static void main(String[] args) {
-		Cofrinho _cofrinho = new Cofrinho();
+		clsCofrinho _cofrinho = new clsCofrinho();
 		Scanner _scanner = new Scanner(System.in);
 
 		int _opcao;
@@ -59,7 +59,7 @@ public class Principal {
 	}
 
 	// Função para adicionar uma moeda ao cofrinho
-	private static void adicionarMoeda(Cofrinho cofrinho, Scanner scanner) {
+	private static void adicionarMoeda(clsCofrinho cofrinho, Scanner scanner) {
 		System.out.println("Informe qual o tipo da moeda que será incluida no cofre:");
 
 		// Lista os tipos de moedas disponíveis
@@ -92,7 +92,7 @@ public class Principal {
 	}
 
 	// Função para remover uma moeda do cofrinho
-	private static void removerMoeda(Cofrinho cofrinho, Scanner scanner) {
+	private static void removerMoeda(clsCofrinho cofrinho, Scanner scanner) {
 		// Lista as moedas presentes no cofrinho
 		cofrinho.listarMoedas(); 
 
@@ -108,7 +108,7 @@ public class Principal {
 		removerMaisMoedas(cofrinho, scanner); 
 	}
 
-	private static void listarTiposMoedas(Cofrinho cofrinho) {
+	private static void listarTiposMoedas(clsCofrinho cofrinho) {
 		System.out.println("Opção 1: Dólar");
 		System.out.println("Opção 2: Euro");
 		System.out.println("Opção 3: Real");
@@ -128,7 +128,7 @@ public class Principal {
 		}
 	}    
 
-	private static void removerMaisMoedas(Cofrinho cofrinho, Scanner scanner)
+	private static void removerMaisMoedas(clsCofrinho cofrinho, Scanner scanner)
 	{
 		System.out.println(" ");
 		System.out.println("Deseja remover mais moedas: ");
@@ -146,7 +146,7 @@ public class Principal {
 		}
 	}
 
-	private static void adicionarMaisMoedas(Cofrinho cofrinho, Scanner scanner)
+	private static void adicionarMaisMoedas(clsCofrinho cofrinho, Scanner scanner)
 	{
 		System.out.println(" ");
 		System.out.println("Deseja adicionar mais moedas: ");

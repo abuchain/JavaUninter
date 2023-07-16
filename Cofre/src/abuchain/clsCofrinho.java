@@ -3,11 +3,10 @@ package abuchain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cofrinho {
+public class clsCofrinho {
 	private List<Moeda> _moedas;
-	private List<String> _tiposMoeda = new ArrayList<>();
 
-	public Cofrinho() {
+	public clsCofrinho() {
 		_moedas = new ArrayList<>();
 	}
 
@@ -23,7 +22,7 @@ public class Cofrinho {
 			Moeda _moedaRemovida = _moedas.remove(indice);
 			System.out.println("Moeda removida do cofrinho: " + _moedaRemovida.getDescricao());
 		} else {
-			System.out.println("Índice inválido. Moeda não removida.");
+			System.out.println("Codigo inválido. Moeda não removida.");
 		}
 	}
 
