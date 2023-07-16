@@ -3,10 +3,10 @@ package abuchain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class clsCofrinho {
+public class Cofrinho {
 	private List<Moeda> _moedas;
 
-	public clsCofrinho() {
+	public Cofrinho() {
 		_moedas = new ArrayList<>();
 	}
 
