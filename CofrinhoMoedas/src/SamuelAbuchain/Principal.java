@@ -42,7 +42,8 @@ public class Principal {
 					break;
 				case 4:
 					// Calcula o valor total das moedas convertido para Real
-					System.out.println("Valor total no cofrinho em Real: " + cofrinho.calcularTotalReal()); 
+					System.out.print("Valor total no cofrinho em Real: ");
+					System.out.printf("%.2f%n", cofrinho.calcularTotalReal()); 
 					break;
 				case 0:
 					// Encerra o programa

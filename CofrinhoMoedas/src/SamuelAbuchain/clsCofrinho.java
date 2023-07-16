@@ -29,16 +29,17 @@ public class clsCofrinho {
 	// Lista todas as moedas do cofrinho
 	public void listadeMoedas() {
 		if (!lstmoedas.isEmpty()) { 
-			System.out.println("Moedas no Cofrinho ");
-
+			System.out.println(" ");
 			System.out.println("Moedas no cofrinho:");
 			for (int i = 0; i < lstmoedas.size(); i++) {
 				clsMoeda moeda = lstmoedas.get(i); 
-				System.out.println(i + ": " + moeda.obterDescricao() + " - Valor: " + moeda.obterValor());
-			}
+				System.out.print(i + ": " + moeda.obterDescricao() + " - Valor: ");
+				System.out.printf("%.2f%n", moeda.obterValor());
 
+			}
 			System.out.println(" ");
 		} else {
+			System.out.println(" ");
 			System.out.println("O cofrinho está vazio."); 
 		}
 	}
