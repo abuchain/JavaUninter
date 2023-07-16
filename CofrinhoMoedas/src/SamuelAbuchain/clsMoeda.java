@@ -1,14 +1,18 @@
 package SamuelAbuchain;
 
-//Classe abstrata de moeda
+// Classe abstrata de moeda
 public abstract class clsMoeda {
-	double valor;
+	// Atributo para armazenar o valor da moeda
+	double valor; 
 
 	public clsMoeda(double valor) {
 		super();
-		this.valor = valor;
+		// Define o valor da moeda com base no parâmetro recebido no construtor
+		this.valor = valor; 
 	}
-
-	abstract double obterValor();
-	abstract String obterDescricao();
+	// Método abstrato para obter o valor da moeda
+	abstract double obterValor(); 
+	
+	// Método abstrato para obter a descrição da moeda
+	abstract String obterDescricao(); 
 }
