@@ -12,7 +12,7 @@ public abstract class clsMoeda {
 	}
 	// Método abstrato para obter o valor da moeda
 	abstract double obterValor(); 
-	
+
 	// Método abstrato para obter a descrição da moeda
 	abstract String obterDescricao(); 
 }
