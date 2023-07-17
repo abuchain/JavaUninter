@@ -7,7 +7,7 @@ public class Principal {
 	public static void main(String[] args) {
 		// Cria um objeto da classe clsCofrinho
 		clsCofrinho cofrinho = new clsCofrinho(); 
-		
+
 		// Cria um objeto Scanner para entrada de dados do usuário
 		Scanner scanner = new Scanner(System.in); 
 
@@ -104,7 +104,7 @@ public class Principal {
 		// Chama o método listadeMoedas() da classe clsCofrinho para listar todas as moedas do cofrinho
 		cofrinho.listadeMoedas(); 
 		System.out.println("Informe o índice da moeda a ser removida: ");
-		
+
 		// Obtem o índice da moeda informado pelo usuário
 		int indice = scanner.nextInt(); 
 		scanner.nextLine(); 
